@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <!-- TITLE-->
+        <title> FWC </title>
+        <!-- FAV ICON -->
+        <link rel="shortcut icon" href="images/Untitled-3.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8">
+        <!-- Latest IE rendering engine & Chrome Frame Meta Tags -->
+        <!--[if IE]>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <![endif]-->
+        <!-- GOOGLE FONT
+            ================================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+        <!-- CSS BEGINS 
+            ================================================== -->
+        <!-- BOOTSTRAP CSS -->	
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- REVOLUTION STYLE SHEETS -->
+		<link rel="stylesheet" type="text/css" href="css/revolution/settings.css">
+		<!-- REVOLUTION LAYERS STYLES -->
+		<link rel="stylesheet" type="text/css" href="css/revolution/layers.css">
+		<!-- REVOLUTION NAVIGATION STYLES -->
+		<link rel="stylesheet" type="text/css" href="css/revolution/navigation.css">
+        <!-- FONTAWESOME -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- ICONS CSS -->
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- THEME CSS -->
+        <link href="css/theme.css" rel="stylesheet" type="text/css" />
+        <!-- STYLE CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+        <!-- COLOR SCHEME -->
+        <link href="css/color-scheme/color.css" id="changeable-colors" rel="stylesheet" />
+        <!-- CSS ENDS
+            ================================================== -->
+    </head>
+    <body>
+		<!-- PAGE LOADER -->
+		<div id="pageloader">
+			<img src="images/loader.gif" class="img-responsive" alt="loader" height="128" width="128">
+		</div>
+		<!-- PAGE WRAPPER -->
+        <div class="page-wrapper">
+			<!-- HEADER -->
+			<header>
+				<!-- NAV TOP -->
+				<div class="nav-top">
+					<!-- CONTAINER -->
+					<div class="container">
+						<!-- TOGGLE -->
+						<div class="top-toggle-btn">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
+								<span class="ion-android-remove"></span>
+							 </button>
+						 </div>
+						<!-- COLLAPSE -->
+					<!-- 	<div class="collapse navbar-collapse" id="top-menu">
+							<ul class="menu-inline navbar-left">
+								<li class="welcom-text">Hi guest! Welcome to FWC.</li>
+							
+							</ul>
+							<ul class="menu-inline navbar-right">
+								<li class="contact-info">Contact us: <a class="text-color" href="tel: 088617 86566"> 088617 86566</a></li>
+								<li><a href="#">Extras</a></li>
+								<li><a href="#">Theme documentation</a></li>
+							</ul>
+						</div>	 -->
+					</div><!-- ./ CONTAINER -->
+				</div>
+				<!-- NAVIGATION -->
+				<nav id="sticker" class="navbar navbar-default">
+					<!-- CONTAINER -->
+					<div class="container">
+						<!-- NAVBAR HEADER -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+								<span class="sr-only">Toggle navigation</span> 
+								<span class="ion-android-menu"></span>
+							</button>
+							<!-- LOGO -->
+							<a class="navbar-brand" href="index.html"><img class="img-responsive" alt="logo" src="images/logo.png"></a> 
+							<!-- <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.15 42.71"><path d="M144.55,39.61c-.21-.19-.26-.45-.33-.71-.38-1.5-.75-3-1.13-4.5-1.21-4.83-2.42-9.67-3.63-14.5-.05-.22-.15-.42-.23-.63-.01-.03-.07-.06-.09-.05-.06,.02-.15,.05-.16,.09-.1,.29-.19,.57-.26,.87-1.58,6.1-3.15,12.21-4.73,18.31-.35,1.36-.23,1.21-1.57,1.21-3.14,0-6.27,0-9.41,0-.3,0-.61,0-.9-.04-.1-.01-.22-.1-.26-.18-.12-.23-.22-.48-.3-.73-.65-1.93-1.3-3.86-1.95-5.8-1.8-5.37-3.59-10.74-5.39-16.11-1.21-3.62-2.42-7.23-3.63-10.85-.11-.32-.21-.65-.3-.97-.05-.16,.05-.32,.2-.34,.19-.01,.38-.03,.56-.03h10.66c.19,0,.38,.02,.52,.02,.29,.19,.34,.45,.4,.7,.31,1.25,.62,2.49,.92,3.74,1.37,5.61,2.74,11.22,4.13,16.83,.1,.4,.13,.82,.36,1.18,.02,.02,.06,.03,.1,.04,.04,0,.09,.01,.1,0,.06-.09,.12-.19,.15-.3,.3-1.21,.6-2.42,.9-3.63,.94-3.85,1.87-7.7,2.81-11.55,.49-2.02,.99-4.03,1.49-6.05,.04-.15,.06-.3,.1-.44,.12-.44,.24-.53,.73-.53,.98,0,1.97,0,2.95,0h6.35c.34,0,.68,.01,1.02,.02,.17,0,.29,.11,.34,.26,.09,.25,.17,.5,.24,.75,.23,.91,.45,1.83,.68,2.75,1.43,5.75,2.85,11.51,4.28,17.26,.12,.47,.25,.94,.39,1.41,0,.03,.05,.08,.07,.08,.07-.02,.17-.04,.2-.09,.07-.13,.13-.27,.16-.41,1.36-5.65,2.73-11.3,4.09-16.95,.32-1.32,.63-2.64,.95-3.96,.07-.29,.16-.58,.26-.86,.04-.09,.15-.19,.24-.2,.3-.04,.6-.05,.9-.05,2.53,0,5.07,0,7.6,0,.72,0,1.44,0,2.15,0,.22,0,.45,.03,.68,.05,.02,.14,.06,.26,.04,.36-.06,.26-.15,.5-.23,.75-2.46,7.26-4.92,14.52-7.38,21.78-1.24,3.65-2.46,7.3-3.69,10.95-.09,.25-.16,.5-.26,.75-.09,.22-.24,.38-.5,.39-.27,0-.53,.01-.79,.01h-9.52c-.34,0-.68,.05-1-.08h0Z" style="fill:#1359a0;"/><path d="M43.15,41.83c-3.32,.02-6.43-.79-9.39-2.24-.27-.13-.54-.28-.81-.39-.09-.04-.23-.03-.32,.02-.24,.11-.47,.25-.69,.39-2.21,1.36-4.59,2.28-7.14,2.77-1.38,.27-2.77,.37-4.17,.34-5.45-.11-10.17-2.07-14.12-5.81-2.92-2.77-4.86-6.15-5.84-10.06C.15,24.81-.11,22.75,.04,20.66c.34-4.74,1.99-8.97,5.13-12.57,3.08-3.54,6.94-5.77,11.51-6.78,.81-.18,1.63-.35,2.47-.34,1.36-.24,2.71-.1,4.07,.02,.71,.07,1.42,.19,2.12,.34,1.86,.4,3.63,1.04,5.31,1.93,.13,.07,.27,.14,.4,.21,.18,.08,.37,.09,.54,0,.16-.09,.32-.2,.48-.3,2.57-1.6,5.36-2.61,8.36-3.01C41.37,.04,42.32,0,43.26,0c4.99,.02,9.42,1.64,13.25,4.82,3.76,3.13,6.13,7.12,7.14,11.92,.38,1.83,.54,3.67,.4,5.52-.19,2.46-.75,4.85-1.77,7.11-1.9,4.2-4.84,7.45-8.84,9.74-2.22,1.27-4.59,2.11-7.13,2.46-.41,.06-.82,.13-1.23,.16-.64,.05-1.28,.06-1.92,.09h0Zm-3.42-31.03c.1,.13,.21,.24,.27,.37,.2,.37,.38,.74,.56,1.11,.51,1.06,.98,2.13,1.32,3.25,.63,2.09,.79,4.23,.62,6.39-.09,1.2-.21,2.41-.42,3.6-.11,.63-.25,1.26-.44,1.87-.69,2.22-1.72,4.27-3.12,6.13-.69,.92-.6,.88,.41,1.24,.86,.31,1.74,.52,2.64,.64,1.77,.25,3.54,.22,5.3-.15,3.68-.78,6.77-2.57,9.09-5.55,2.98-3.84,3.91-8.21,2.87-12.94-.74-3.35-2.48-6.15-5.13-8.35-2.74-2.28-5.91-3.45-9.46-3.58-1.29-.05-2.56,.11-3.82,.39-2.83,.64-5.31,1.96-7.36,4.02-2.41,2.43-3.88,5.35-4.39,8.76-.29,1.97-.2,3.91,.27,5.85,.24,1,.57,1.96,1.02,2.88,.21,.44,.11,.59-.25,.85-.46,.34-.92,.66-1.37,1-.61,.45-1.2,.92-1.8,1.37-.18,.14-.37,.26-.55,.39-.13,.09-.31,.04-.39-.1-.33-.64-.66-1.27-.97-1.92-.66-1.41-1.18-2.86-1.41-4.41-.09-.6-.12-1.2-.2-1.8-.09-.68-.08-1.36-.02-2.04,.03-.38,.07-.75,.09-1.13,.03-1.02,.23-2.03,.35-3.04,.05-.41,.15-.82,.25-1.22,.33-1.25,.79-2.44,1.35-3.6,.56-1.16,1.24-2.25,1.99-3.29,.13-.18,.27-.37,.39-.55,.09-.14,.05-.32-.08-.39-.14-.07-.27-.14-.41-.2-3.08-1.09-6.2-1.26-9.36-.38-3.96,1.11-7.02,3.43-9.11,6.99-1.45,2.47-2.17,5.13-2.16,7.99,0,.68,.08,1.36,.17,2.03,.34,2.49,1.23,4.76,2.72,6.76,2.86,3.86,6.69,6.02,11.51,6.34,1.33,.09,2.64,.02,3.94-.25,3.44-.71,6.36-2.35,8.67-5.01,2.2-2.53,3.42-5.5,3.67-8.85,.19-2.61-.21-5.12-1.31-7.51-.08-.17-.15-.35-.21-.53-.02-.06,.01-.16,.05-.21,.09-.12,.2-.23,.32-.32,1.16-.9,2.33-1.8,3.5-2.7,.12-.09,.26-.15,.41-.24h0Z" style="fill:#1359a0;"/><path d="M193.54,26.46c.11,.04,.19,.05,.24,.1,2.15,2.23,4.25,4.5,6.31,6.72,.05,.25-.07,.36-.17,.46-1.53,1.59-3.25,2.93-5.18,4.01-1.85,1.04-3.81,1.84-5.89,2.29-1,.22-2,.4-3.03,.39-.64,0-1.29,.02-1.93-.01-3.51-.14-6.77-1.12-9.68-3.12-3.64-2.51-5.96-5.94-7.09-10.19-.57-2.14-.76-4.32-.59-6.52,.34-4.34,1.97-8.11,5.04-11.23,2.28-2.32,5.02-3.85,8.14-4.71,1.75-.48,3.54-.76,5.37-.72,.11,0,.23,0,.34,0,2.22-.07,4.35,.39,6.43,1.12,2.08,.73,4.03,1.72,5.81,3.02,.76,.56,1.46,1.2,2.13,1.86,.13,.13,.24,.29,.35,.43-.54,.78-4.28,5.27-6.18,7.42-.1,.11-.21,.2-.34,.32-.11-.07-.21-.12-.28-.2-.33-.37-.63-.76-.97-1.11-1.19-1.19-2.55-2.13-4.1-2.77-1.52-.63-3.08-.72-4.66-.26-2,.59-3.42,1.87-4.36,3.71-.4,.78-.66,1.61-.79,2.47-.24,1.58-.22,3.16,.17,4.73,.36,1.42,1.03,2.67,2.08,3.71,1.59,1.56,3.5,2.18,5.69,1.96,1.18-.12,2.28-.52,3.32-1.06,1.04-.54,2-1.21,2.88-2,.3-.28,.61-.55,.91-.81h0Z" style="fill:#1359a0;"/><path d="M81.24,22.1V6.11c0-.38,.03-.75,.05-1.13,0-.15,.15-.3,.29-.3,.38-.02,.75-.03,1.13-.03h25.4c1.34,0,1.32-.11,1.31,1.28,0,2.15,0,4.31,0,6.46,0,.26-.04,.52-.07,.79,0,.06-.09,.13-.15,.16-.06,.04-.14,.05-.22,.05-.38,0-.75,.02-1.13,.02h-13.61c-.38,0-.75,.02-1.13,.03-.13,0-.3,.17-.32,.28-.02,.11-.04,.22-.04,.34,0,1.59,0,3.17,0,4.76,0,.11,.02,.23,.03,.34,.02,.17,.2,.37,.37,.38,.38,.02,.75,.04,1.13,.04,4.16,0,8.31,0,12.47,0,.34,0,.68,0,1.02,0,.43,.01,.55,.13,.57,.52,0,.15,0,.3,0,.45v6.69c0,.23,0,.45-.05,.68-.02,.09-.12,.19-.21,.23-.09,.05-.22,.06-.33,.06-.38,0-.75,.01-1.13,.01-4.12,0-8.24,0-12.36,0-.38,0-.75,.02-1.13,.04-.17,0-.36,.21-.36,.38-.02,.34-.03,.68-.03,1.02,0,2.76,0,5.52,0,8.28,0,.3,0,.61,0,.91-.02,.78-.06,.83-.85,.83-3.25,0-6.5,0-9.75,0-.15,0-.3,0-.45-.02-.23-.02-.4-.2-.42-.45-.01-.15-.02-.3-.02-.45,0-.3,0-.61,0-.91v-15.76h0Z" style="fill:#1359a0;"/></svg> -->
+						</div>
+						<!-- NAVBAR COLLAPSE -->
+						
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu-inline navbar-right">
+								<!-- HOME -->
+								<li class="dropdown">
+									<a href="index.html" class="active">Home</a>
+								
+									<!-- DROPDOWN MENU -->
+								
+								</li>
+								<!-- COMPANY -->
+								<li class="dropdown">
+									<a href="about.html">About us</a>
+									
+								
+								</li>
+								<!-- SERVICES -->
+								<li class="dropdown">
+									<a href="">Services</a>
+									<span data-toggle="dropdown" class="dropdown-toggle">
+										<i class="ion-arrow-down-b"></i>
+									</span>
+									<!-- DROPDOWN MENU -->
+									<ul class="dropdown-menu ">
+									
+											<li><a href="itservices.html">IT Services</a></li>
+											<li><a href="TrainingServices.html">Career Development</a></li>
+											<li><a href="InnovativeWork.html">Innovative Workforce</a></li>
+										<li><a href="ContractStaffing.html">Contract Staffing</a></li>
+										
+										
+									
+									
+									</ul>
+								</li>
+								<!-- PROJECTS -->
+								<li class="dropdown">
+									<a href="IndustryFootprint.html">Industry FootPrint</a>
+									</li>
+									<!-- DROPDOWN MENU -->
+									
+								
+								
+									<!-- DROPDOWN MENU -->
+									<li><a href="careers.html">career</a></li>
+								<!-- CONTACT -->
+								<li><a href="contact.html">Contact</a></li>
+
+								
+								<li class="mydivouter">
+								
+									<a href="https://app.fwc.co.in/" type="button" class=" btn-default mybuttonoverlap btn btn-info ">Login</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.COLLAPSE -->
+					</div>
+					<!-- /.CONTAINER -->
+				</nav><!-- /. NAVIGATION MENU -->
+			</header><!-- /. HEADER -->
+			
+			<!-- REVOLTION SLIDER -->
+			<div id="rev_slider_202_1_wrapper" class="rev_slider_wrapper" data-alias="concept1" style="background-color:#FFFFFF;padding:0px;">
+                <!-- START REVOLUTION SLIDER 5.1.1RC fullscreen mode -->
+                <div id="rev-slide1" class="rev_slider" style="display:none;" data-version="5.1.1RC">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="parallaxtoright" data-slotamount="5" data-masterspeed="700" >
+						 <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1 sft"
+								style="z-index: 8; white-space: nowrap; text-transform:uppercase; font-size:13px; color:#222;"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['-140','-140','-140','-80']"
+								data-start="1000"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="1600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Finance strength is the cornerstone of our success</div>
+								
+							<!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2 randomrotate"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-fontsize="['60','60','50','30']"
+								data-lineheight="['70','70','50','40']"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['0','0','0','0']"
+								data-start="1600"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1">START YOUR  <br><span class="text-color">FUTURE  </span> IN FWC<br> </div>	
+								
+							<!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3 sfb"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['160','160','160','100']"
+								data-start="2400"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1"><a href="#services" class="btn btn-default">Our Services</a></div>
+							
+							<!-- LAYER NR. 4 -->
+                            <a href="#" class="tp-caption btn btn-link dashed typo-grey tp-resizeme rs-parallaxlevel-3 sfb"
+								style="z-index: 7; padding:0;"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['175','175','175','175']"
+								data-voffset="['160','160','160','100']"
+								data-start="2400"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Find Out More</a>	
+							
+							<!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3"
+								style="z-index: 2; "
+								data-x="['right','right','right','right']"
+								data-y="['top','top','top','top']"
+								data-hoffset="['0','-200','-200','-250']"
+								data-voffset="['15','15','15','15']"
+								data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+								data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+								data-start="1500"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1"><img src="images/slider/1.png" alt="rev-img">	
+                            </div>
+                        </li>
+						<!-- SLIDE 2  -->
+						<li data-transition="parallaxtobottom" data-slotamount="5" data-masterspeed="700" style="border-top:1px solid #e1e1e1" >
+							<!-- MAIN IMAGE -->
+							<img src="images/slider/bg-1.jpg"  alt="slidebg1" data-lazyload="images/slider/bg-1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">							<!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1 sft"
+								style="z-index: 8; white-space: nowrap; text-transform:uppercase; font-size:13px;"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['-105','-105','-75','-65']"
+								data-start="1000"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="1600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Empower Your growth 
+								<u class="text-color">FWC</u></div>
+								
+							<!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2 randomrotate"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-fontsize="['60','60','50','30']"
+								data-lineheight="['70','70','50','40']"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['0','0','0','0']"
+								data-start="1600"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Empower Your <br> <span class="text-color">growth</span></div>	
+								
+							<!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3 sfb"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-fontsize="['60','60','50','30']"
+								data-lineheight="['70','70','50','40']"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['125','125','95','85']"
+								data-start="2400"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1"><a href="#" class="btn btn-default">Learn More</a></div>
+							
+							<!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3"
+								style="z-index: 2; "
+								data-x="['right','right','right','right']"
+								data-y="['top','top','top','top']"
+								data-hoffset="['0','0','-200','-250']"
+								data-voffset="['15','15','15','15']"
+								data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+								data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+								data-start="1500"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1"><img src="images/slider/2.png" alt="rev-img"></div>		
+						</li>
+						<!-- SLIDE 3 -->
+						<li data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="700" >
+							<!-- MAIN IMAGE -->
+							<img src="images/slider/bg-2.png"  alt="slidebg1" data-lazyload="images/slider/bg-2.png" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">				<!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1 sft"
+								style="z-index: 8; white-space: nowrap; text-transform:uppercase; font-size:13px; color:#2e2e2e"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['-105','-105','-105','-65']"
+								data-start="1000"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="1600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Personal Finance Consultant</div>
+								
+							<!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2 randomrotate"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-fontsize="['60','60','50','30']"
+								data-lineheight="['70','70','50','40']"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['0','0','0','0']"
+								data-start="1600"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Customer <br> <span class="text-color">Satisfaction</span> </div>	
+								
+							<!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3 sfb"
+								style="z-index: 7; text-transform:uppercase; max-width:40%; font-weight:700; color:#333; white-space: nowrap;"
+								data-fontsize="['60','60','50','30']"
+								data-lineheight="['70','70','50','40']"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['15','15','15','15']"
+								data-voffset="['125','125','125','85']"
+								data-start="2400"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1"><a href="#" class="btn btn-default">Contact Us</a></div>
+							<!-- LAYER NR. 4 -->
+                            <a href="#" class="tp-caption btn btn-link dashed typo-grey tp-resizeme rs-parallaxlevel-3 sfb"
+								style="z-index: 7; padding:0;"
+								data-x="['left','left','left','left']"
+								data-y="['middle','middle','middle','middle']"
+								data-hoffset="['175','175','175','175']"
+								data-voffset="['125','125','125','85']"
+								data-start="2400"
+								data-speed="600"
+								data-easing="Power1.easeIn"
+								data-endeasing="Power4.easeOut"
+								data-splitin="none"
+								data-elementdelay="0.1"
+								data-endspeed="600"
+								data-splitout="none"
+								data-endelementdelay="0.1">Our Services</a>	
+							
+						</li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div><!-- /. REVOLTION SLIDER -->
+			
+	
+			<!-- CALL TO ACTION SECTION -->
+			<section class="cta-section theme-bg typo-white">
+				<!-- CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 animated" data-animation="fadeInUp" data-animation-delay="300">
+							<!-- CTA BLOCK -->
+							<div class="cta-block">
+								<!-- CTA TITLE -->
+								<h4 class="cta-title">Get a free quoation</h4>
+								<p>Please let us know what service you are interested . We will get in touch with you shortly...  </p>
+							</div><!-- /. CTA BLOCK -->	
+						</div>
+						<div class="col-md-4">
+							<!-- CTA BTN BLOCK -->
+							<div class="cta-btn-block with-shape text-center">
+								<a href="contact.html" class="cta-link">Request a quote</a></div>
+						</div>
+					</div>	
+				</div>
+				<!-- /. CONTAINER -->
+			</section>
+			<!-- /. CALL TO ACTION SECTION -->	
+
+			
+		
+
+	
+			
+		<!-- ABOUT SECTION -->
+		<section>
+			<!-- CONTAINER -->
+			<div class="container">
+				<!-- SIDE TITLE -->
+				<div class="side-title">Learn more about us</div>
+				<div class="row match-height">
+					<div class="col-md-6 animated" data-animation="fadeInUp" data-animation-delay="300">
+						<!-- SECTION TITLE -->
+						<h6 class="typo-light text-color"><u>"FWC has been done over the years with a view of delivering customized quality Manpower resources and technical solutions to our diverse industry and service sector based clients.”</u></h6>
+								<p>It is managed by highly qualified professional specialists with several years of training and experience both in India and abroad.
+								Through a unique combination of skills, competencies, knowledge and favorable experience, we have scaled great heights in terms of our size & stature in a short period of time.</p>
+								<P>Our talisman is our pool of IT consultants backed by a portfolio which includes assignments with Fortune 500 companies and other blue chip corporations. </P>
+								<!-- SIGNATURE -->
+								<div class="signature-block">
+									<!-- SIGNATURE IMAGE -->
+									<!-- <img src="images/signature.png" class="img-responsive signature-img" alt="signature"> -->
+									<p><strong><span class="typo-black text-uppercase">P. Mohan </span></strong> Founder at <span class="text-color"> FWC Inc</span></p>
+								</div>
+					</div>
+					<div class="col-md-6 bg-contain verticle-middle" data-background="images/about/shapes.png">
+						<img src="images/about/4.jpg" class="img-responsive center-block shadow-block animated" data-animation="fadeInUp" data-animation-delay="300" alt="about">						</div>
+				</div>
+			</div>
+			<!-- /. CONTAINER -->
+		</section><!-- /.ABOUT SECTION -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- SERVICES SECTION -->
+			<div id="services"></div><br>
+			<section class="grey-bg">
+				<!-- CONTAINER -->
+				<div class="container">
+					<!-- SIDE TITLE -->
+					<div class="side-title">What we offer to you</div>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- SECTION TITLE -->
+							<div class="section-title clearfix animated" data-animation="fadeInUp" data-animation-delay="300">
+								<h3>Take away the risk & you can do anything.</h3>
+							</div>
+						</div>
+						<div class="col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+							<!-- LINK -->
+							<p class="text-right"><a href="itservices.html" class="btn-link dashed typo-grey">View all services </a></p>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="500">
+							<!-- SERVICES SLIDER -->
+							<div class="owl-carousel" data-margin="30" data-loop="false" data-nav="false" data-dots="true" data-items="2" data-tablet="1" data-desktopsmall="2"  data-desktop="2" data-mobile="1" data-autoplay="true" data-delay="5000" data-navigation="true">
+								<!-- ITEM -->
+								<div class="item">
+									<!-- SERVICES SLIDE -->
+									<div class="services-slide media">
+										<div class="media-left">
+											<a href="#">
+												<!-- IMG -->
+												<img class="media-object" src="images/services/1.png" alt="services-img">											</a>										</div>
+										<div class="media-body">
+											<!-- TITLE -->
+											<h4 class="services-heading media-heading"><span class="text-color">01.</span>IT Consulting </h4>
+											<!-- DESC -->
+											<p>We are one of the leading provider of IT solutions offering Custom Application Development (React Js, Angular JS,Java/J2EE, Microsoft.net) </p>
+											<!-- LINK -->
+											<a href="itservices.html" class="btn-link">Read More</a>										</div>
+									</div><!-- /. SERVICES SLIDE -->
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<!-- SERVICES SLIDE -->
+									<div class="services-slide media">
+										<div class="media-left">
+											<a href="#">
+												<!-- IMG -->
+												<img class="media-object" src="images/services/2.png" alt="services-img">											</a>										</div>
+										<div class="media-body">
+											<!-- TITLE -->
+											<h4 class="services-heading media-heading"><span class="text-color">02.</span>Career Development</h4>
+											<!-- DESC -->
+											<p>We help you respond to changing market conditions and emerging business opportunities . </p>
+											<!-- LINK -->
+											<a href="TrainingServices.html" class="btn-link">Read More</a>										</div>
+									</div><!-- /.SERVICES SLIDE -->
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<!-- SERVICES SLIDE -->
+									<div class="services-slide media">
+										<div class="media-left">
+											<a href="#">
+												<!-- IMG -->
+												<img class="media-object" src="images/services/3.png" alt="services-img">											</a>										</div>
+										<div class="media-body">
+											<!-- TITLE -->
+											<h4 class="services-heading media-heading"><span class="text-color">03.</span>Innovative Workforce </h4>
+											<!-- DESC -->
+											<p>FutureWorld delivers innovative staffing solutions, which are agile enough to meet the rapidly changing talent needs of todays world of work. </p>
+											<!-- LINK -->
+											<a href="InnovativeWork.html" class="btn-link">Read More</a>										</div>
+									</div><!-- /.SERVICES SLIDE -->
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<!-- SERVICES SLIDE -->
+									<div class="services-slide media">
+										<div class="media-left">
+											<a href="#">
+												<!-- IMG -->
+												<img class="media-object" src="images/services/4.png" alt="services-img">											</a>										</div>
+										<div class="media-body">
+											<!-- TITLE -->
+											<h4 class="services-heading media-heading"><span class="text-color">04.</span>Staffing Solution</h4>
+											<!-- DESC -->
+											<p>We bring you the innovative staffing solutions which are agile enough to meet the rapidly changing talent needs of today’s world of work. </p>
+											<!-- LINK -->
+											<a href="ContractStaffing.html" class="btn-link">Read More</a>										</div>
+									</div><!-- /.SERVICES SLIDE -->
+								</div><!-- /. ITEM -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /. CONTAINER -->
+			</section><!-- /. SERVICES SECTION -->
+			
+			<!-- TESTIMONIAL SECTION -->
+			<section class="padding-bottom-none bottom-shadow">
+				<!-- CONTAINER -->
+				<div class="container-fluid">
+					<div class="row">
+        				<div class="col-md-12 margin-none">
+							<!-- CONTAINER -->
+							<div class="container padding-none">
+								<!-- SIDE TITLE -->
+								<div class="side-title">What clients say about us</div>
+								<div class="row match-height">
+									<div class="col-md-5 padding-bottom-120 margin-none">
+										<div class="row">
+        									<div class="col-md-12">
+												<!-- SECTION TITLE -->
+												<div class="section-title clearfix animated" data-animation="fadeInUp" data-animation-delay="300">
+													<h3>The right relationship is everything.</h3>
+												</div>
+											</div>
+										</div>		
+										<!-- TESTIMONIALS -->
+										<div class="testimonial-wrapper">
+											<div class="testimonial-cmt margin-none grey-bg">
+												<h6 class="typo-light">“FWC believes in delivering customer satisfaction with high quality services and within the customer budget. Once you are able to experience our service, you will be in a better position to judge what we can do for business value in a realistic way. You can evaluate the report submitted by the experts and benchmark the quality accordingly. ”</h6>
+												<!-- DESC -->
+												<p class="testi-designation"><strong class="testi-name text-uppercase typo-black">Titus.G</strong> Director at <a href="#" class="text-color">FWC Inc.</a></p>
+												
+											</div>
+										</div><!-- /. TESTIMONIALS -->
+									</div>
+									<div class="col-md-3 hidden-sm hidden-xs">
+									</div>
+									<div class="col-md-4 hidden-sm hidden-xs">
+										<!-- IMG -->
+										<img class="img-responsive testimonial-side-img" src="images/testimonial/businessman.png" alt="businessman">
+										<h3 class="testimonial-title">TESTIMONIAL</h3>
+									</div>
+								</div>
+							</div><!-- /. CONTAINER -->
+						</div>
+						<div class="row">
+							<!-- FLUID COLUMN -->
+							<div class="col-md-offset-8 col-md-4 theme-bg hidden-sm  hidden-xs fluid-col">
+							</div>
+						</div>	
+					</div>	
+				</div>	
+			</section>
+			<!-- /. TESTIMONIAL SECTION -->
+
+
+				<!-- TESTIMONIAL SECTION -->
+			<section class="grey-bg">
+				<!-- CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- SECTION TITLE -->
+							<div class="section-title clearfix animated" data-animation="fadeInUp" data-animation-delay="300">
+								<h3>What clients say about us</h3>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- TESTIMONIAL SLIDER -->
+							<div class="owl-carousel" data-items="3" data-margin="30" data-loop="true" data-merge="true" data-nav="false" data-dots="true" data-mobile="1" data-tablet="1" data-desktopsmall="2"  data-desktop="2" data-autoplay="true" data-delay="5000" data-navigation="true">
+								<!-- ITEM -->
+								<div class="item">
+									<div class="testimonial-wrapper">
+										<div class="testimonial-cmt white-bg">
+											<p>Vestibulum sit amet est non diam aliquet consequat nec vitae lacus. Quisque vitae nulla lobortis, viverra sem vel, faucibus sapien. Proin nec ultricies ex. Interdum et malesuada fames.</p>
+											<div class="cmt-arrow"></div>
+										</div>
+										<!-- TESTI DETAILS -->
+										<div class="media">
+											<div class="media-left testi-img-block">
+												<a href="#">
+													<!-- IMG -->
+													<img class="media-object img-circle" src="images/testimonial/1.jpg" alt="testi-img">												</a>											</div>
+											<div class="media-body testi-details-block">
+												<!-- NAME -->
+												<p class="testi-name typo-black">Anthony Ryan</p>
+												<!-- DESC -->
+												<p class="testi-designation">CEO of <span class="text-color">CapitalOne</span></p>
+											</div>
+										</div><!-- /. SERVICES SLIDE -->
+									</div>
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<div class="testimonial-wrapper">
+										<div class="testimonial-cmt white-bg">
+											<p>Vestibulum sit amet est non diam aliquet consequat nec vitae lacus. Quisque vitae nulla lobortis, viverra sem vel, faucibus sapien. Proin nec ultricies ex. Interdum et malesuada fames.</p>
+											<div class="cmt-arrow"></div>
+										</div>
+										<!-- TESTI DETAILS -->
+										<div class="media">
+											<div class="media-left testi-img-block">
+												<a href="#">
+													<!-- IMG -->
+													<img class="media-object img-circle" src="images/testimonial/2.jpg" alt="testi-img">												</a>											</div>
+											<div class="media-body testi-details-block">
+												<!-- NAME -->
+												<p class="testi-name typo-black">Michael Jenkins</p>
+												<!-- DESC -->
+												<p class="testi-designation">CEO of <span class="text-color">CapitalOne</span></p>
+											</div>
+										</div><!-- /. SERVICES SLIDE -->
+									</div>
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<div class="testimonial-wrapper">
+										<div class="testimonial-cmt white-bg">
+											<p>Vestibulum sit amet est non diam aliquet consequat nec vitae lacus. Quisque vitae nulla lobortis, viverra sem vel, faucibus sapien. Proin nec ultricies ex. Interdum et malesuada fames.</p>
+											<div class="cmt-arrow"></div>
+										</div>
+										<!-- TESTI DETAILS -->
+										<div class="media">
+											<div class="media-left testi-img-block">
+												<a href="#">
+													<!-- IMG -->
+													<img class="media-object img-circle" src="images/testimonial/3.jpg" alt="testi-img">												</a>											</div>
+											<div class="media-body testi-details-block">
+												<!-- NAME -->
+												<p class="testi-name typo-black">Michael Jenkins</p>
+												<!-- DESC -->
+												<p class="testi-designation">CEO of <span class="text-color">CapitalOne</span></p>
+											</div>
+										</div><!-- /. SERVICES SLIDE -->
+									</div>
+								</div><!-- /. ITEM -->
+								<!-- ITEM -->
+								<div class="item">
+									<div class="testimonial-wrapper">
+										<div class="testimonial-cmt white-bg">
+											<p>Vestibulum sit amet est non diam aliquet consequat nec vitae lacus. Quisque vitae nulla lobortis, viverra sem vel, faucibus sapien. Proin nec ultricies ex. Interdum et malesuada fames.</p>
+											<div class="cmt-arrow"></div>
+										</div>
+										<!-- TESTI DETAILS -->
+										<div class="media">
+											<div class="media-left testi-img-block">
+												<a href="#">
+													<!-- IMG -->
+													<img class="media-object img-circle" src="images/testimonial/4.jpg" alt="testi-img">												</a>											</div>
+											<div class="media-body testi-details-block">
+												<!-- NAME -->
+												<p class="testi-name typo-black">Michael Jenkins</p>
+												<!-- DESC -->
+												<p class="testi-designation">CEO of <span class="text-color">CapitalOne</span></p>
+											</div>
+										</div><!-- /. SERVICES SLIDE -->
+									</div>
+								</div><!-- /. ITEM -->
+							</div><!-- /. TESTIMONIAL SLIDER -->	
+						</div>
+					</div>
+				</div>
+				<!-- /. CONTAINER -->
+			</section>
+			<!-- /. TESTIMONIAL SECTION -->
+			
+		
+				
+			<!-- FOOTER -->
+			<footer class="black-bg typo-white parallax-bg"  data-background="images/bg/footer-bg.jpg">
+				<div class="footer-widget-area animated" data-animation="fadeInUp" data-animation-delay="300">
+					<!-- CONTAINER -->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<!-- WIDGET -->
+								<div class="widget">
+									<!-- WIDGET TITLE -->
+									<h6 class="widget-title">About Us</h6>
+									<ul class="widget-menu">
+									
+										<li><a href="#">Team</a></li>
+										
+										<li><a href="#">Partners</a></li>
+										<li><a href="#">Career</a></li>
+										<li><a href="#">Locations</a></li>
+									</ul>
+								</div><!-- /. WIDGET -->
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- WIDGET -->
+								<div class="widget">
+									<!-- WIDGET TITLE -->
+									<h6 class="widget-title">Services</h6>
+									<ul class="widget-menu">
+										<li><a href="#">IT Services </a></li>
+										<li><a href="#">Career Development</a></li>
+										<li><a href="#">Innovative Workforce</a></li>
+										<li><a href="#">Contract Staffing</a></li>
+										
+									</ul>
+								</div><!-- /. WIDGET -->
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- WIDGET -->
+								<div class="widget">
+									<!-- WIDGET TITLE -->
+									<h6 class="widget-title">Resources</h6>
+									<ul class="widget-menu">
+										<li><a href="#">Blog</a></li>
+									
+										<li><a href="#">FAQs</a></li>
+										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+								
+									</ul>
+								</div><!-- /. WIDGET -->
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- WIDGET -->
+								<div class="widget widget-subscribe">
+									<!-- WIDGET TITLE -->
+									<h6 class="widget-title">Newsletter</h6>
+									
+									<p>Sign up to our newsletter system to get latest news from us.</p>
+									<!-- SUBSCRIBE FORM -->
+									<div class="subscribe-form animated" data-animation="fadeInUp" data-animation-delay="300">
+										<p class="subscribe-message"></p>
+										<form id="subscribe_form" action="" method="post" name="subscribe_form">
+										<div class="input-group form-group has-feedback">
+											<div class="form-inner">
+											<!-- SUBSCRIBE INPUT -->
+											<input type="email" class="form-control" value="" name="subscribe_email" placeholder="Enter your email...">
+											</div>
+											<!-- BUTTON -->
+											<span class="input-group-btn">
+												<button class="btn" type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
+											</span>
+										</div><!-- /input-group -->
+										</form>
+									</div>
+								</div><!-- /. WIDGET -->
+							</div>
+						</div>
+					</div><!-- /. CONTAINER -->
+				</div>
+				<div class="container">
+					<hr>
+				</div>
+				<div class="footer-bottom-area">
+					<!-- CONTAINER -->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 footer-logo">
+								<img class="img-responsive" alt="footer-logo" src="images/footer-logo.png">
+							</div>
+							<div class="col-md-6 footer-info">
+								<p>© 2022 fwc. All rights reserved.<br>Designed by Bhargav.</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</footer><!-- /. FOOTER -->
+
+
+
+		</div><!-- /. PAGE WRAPPER -->
+		<!-- COLOR PANEL -->
+	
+		<!-- /. COLOR PANEL -->
+        <!-- JQUERY -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="js/revolution-extension.js"></script>
+        <!-- THEME JS -->
+        <script type="text/javascript" src="js/theme.js"></script>
+        <!-- CAROUSEL JS -->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- CUSTOM JS -->
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+
+</html>
